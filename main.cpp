@@ -18,7 +18,7 @@ void collatz(int& c,int start)
     }
 
 
-    if(start%2)
+    if(!start%2)
         collatz(c,start/2);
     else
         collatz(c,3*start+1);
